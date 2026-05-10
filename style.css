@@ -1755,3 +1755,24 @@ padding: 0 !important;
     height: 280px !important;
   }
 }
+/* Remove YouTube Shorts thumbnail pillarboxing on portrait cards */
+#featured .featured-grid > .work-card:nth-child(2) .card-img,
+#featured .featured-grid > .work-card:nth-child(3) .card-img,
+#featured .lipstick-card .card-img,
+#featured .tribe-card .card-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+
+  /* Zooms the YouTube Shorts thumbnail so black side bars disappear */
+  transform: scale(1.28) !important;
+}
+
+/* Keep hover zoom smooth without re-showing the black bars */
+#featured .featured-grid > .work-card:nth-child(2):hover .card-img,
+#featured .featured-grid > .work-card:nth-child(3):hover .card-img,
+#featured .lipstick-card:hover .card-img,
+#featured .tribe-card:hover .card-img {
+  transform: scale(1.34) !important;
+}
