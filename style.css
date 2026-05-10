@@ -1663,12 +1663,13 @@ footer::before {
 
   gap: 10px !important;
 
-  /* Keeps the same overall proportion as your screenshot */
-  width: min(calc(100vw - 96px), 980px);
-  aspect-ratio: 410 / 320;
+/* Expand the whole mosaic to fill the page width */
+width: calc(100vw - 96px);
+max-width: none;
+aspect-ratio: 410 / 320;
 
-  margin: 0 auto;
-  padding: 0 !important;
+margin: 0 auto;
+padding: 0 !important;
 }
 
 /* Reset old card sizing */
