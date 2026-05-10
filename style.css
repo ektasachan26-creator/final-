@@ -1776,3 +1776,68 @@ padding: 0 !important;
 #featured .tribe-card:hover .card-img {
   transform: scale(1.34) !important;
 }
+
+/* ═══════════════════════════════════════
+   ABOUT SECTION
+═══════════════════════════════════════ */
+
+#about {
+  padding: 120px 48px 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.about-left {
+  flex: 1;
+  position: sticky;
+  top: 120px;
+}
+
+.about-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--neon);
+  margin-bottom: 24px;
+  text-shadow: var(--glow-sm);
+}
+
+.about-title {
+  font-family: 'Orbitron', monospace;
+  font-size: clamp(34px, 5vw, 68px);
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+}
+
+.about-right {
+  flex: 1;
+  max-width: 620px;
+}
+
+.about-right p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--text);
+  margin-bottom: 28px;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-left {
+    position: relative;
+    top: auto;
+  }
+}
