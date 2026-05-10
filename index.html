@@ -133,8 +133,8 @@
       </div>
     </div>
 
-  <!-- ═══════════════════════════════════════
-       SECTION 01 — FEATURED WORKS
+<!-- ═══════════════════════════════════════
+     SECTION 01 — FEATURED WORKS
 ═══════════════════════════════════════ -->
 <section id="featured" class="reveal">
   <div class="section-header">
@@ -143,10 +143,10 @@
     <div class="section-line"></div>
   </div>
 
-  <div class="featured-grid">
+  <div class="featured-grid mosaic-layout">
 
     <!-- HEADPHONES -->
-    <div class="work-card large clickable"
+    <div class="work-card large clickable headphones-card"
       onclick="openLightbox('https://www.youtube.com/embed/iwrT2RwsG6c?autoplay=1&rel=0&modestbranding=1', 'Headphones — B&O Beoplay')">
 
       <div class="corner tl"></div>
@@ -154,7 +154,6 @@
       <div class="corner bl"></div>
       <div class="corner br"></div>
 
-      <!-- YouTube Thumbnail -->
       <img class="card-img"
         src="https://img.youtube.com/vi/iwrT2RwsG6c/maxresdefault.jpg"
         alt="Headphones">
@@ -177,72 +176,8 @@
       </div>
     </div>
 
-    <!-- EARPODS -->
-    <div class="work-card clickable"
-      onclick="openLightbox('https://www.youtube.com/embed/yLF1UF1RcCE?autoplay=1&rel=0&modestbranding=1', 'Earpods — Apple')">
-
-      <div class="corner tl"></div>
-      <div class="corner tr"></div>
-      <div class="corner bl"></div>
-      <div class="corner br"></div>
-
-      <!-- YouTube Thumbnail -->
-      <img class="card-img"
-        src="https://img.youtube.com/vi/yLF1UF1RcCE/maxresdefault.jpg"
-        alt="Apple Earpods">
-
-      <div class="card-overlay"></div>
-
-      <div class="card-hover-overlay">
-        <div class="play-btn">
-          <svg viewBox="0 0 24 24">
-            <polygon points="5,3 19,12 5,21" />
-          </svg>
-        </div>
-        <div class="hover-title">// Play Video</div>
-      </div>
-
-      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;pointer-events:none;">
-        <div class="card-tag">Product Viz</div>
-        <div class="card-name">Earpods</div>
-        <div class="card-desc">Apple · Personal project</div>
-      </div>
-    </div>
-
-    <!-- THE TRIBE -->
-    <div class="work-card clickable tall"
-      onclick="openLightbox('https://www.youtube.com/embed/RTbvkEI26XQ?autoplay=1&rel=0&modestbranding=1', 'The Tribe')">
-
-      <div class="corner tl"></div>
-      <div class="corner tr"></div>
-      <div class="corner bl"></div>
-      <div class="corner br"></div>
-
-      <!-- YouTube Thumbnail -->
-      <img class="card-img"
-        src="https://img.youtube.com/vi/RTbvkEI26XQ/maxresdefault.jpg"
-        alt="Hair Mask">
-
-      <div class="card-overlay"></div>
-
-      <div class="card-hover-overlay">
-        <div class="play-btn">
-          <svg viewBox="0 0 24 24">
-            <polygon points="5,3 19,12 5,21" />
-          </svg>
-        </div>
-        <div class="hover-title">// Play Video</div>
-      </div>
-
-      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;">
-        <div class="card-tag">Haircare</div>
-        <div class="card-name">Hair Mask</div>
-        <div class="card-desc">The Tribe · Product animation</div>
-      </div>
-    </div>
-
     <!-- LIPSTICK -->
-    <div class="work-card clickable"
+    <div class="work-card clickable tall lipstick-card"
       onclick="openLightbox('https://www.youtube.com/embed/uLoocfCK4us?autoplay=1&rel=0&modestbranding=1', 'Lipstick - Mac')">
 
       <div class="corner tl"></div>
@@ -250,7 +185,6 @@
       <div class="corner bl"></div>
       <div class="corner br"></div>
 
-      <!-- YouTube Thumbnail -->
       <img class="card-img"
         src="https://img.youtube.com/vi/uLoocfCK4us/maxresdefault.jpg"
         alt="Lipstick">
@@ -273,8 +207,70 @@
       </div>
     </div>
 
+    <!-- THE TRIBE -->
+    <div class="work-card clickable tall tribe-card"
+      onclick="openLightbox('https://www.youtube.com/embed/RTbvkEI26XQ?autoplay=1&rel=0&modestbranding=1', 'The Tribe')">
+
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <img class="card-img"
+        src="https://img.youtube.com/vi/RTbvkEI26XQ/maxresdefault.jpg"
+        alt="Hair Mask">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-hover-overlay">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24">
+            <polygon points="5,3 19,12 5,21" />
+          </svg>
+        </div>
+        <div class="hover-title">// Play Video</div>
+      </div>
+
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;">
+        <div class="card-tag">Haircare</div>
+        <div class="card-name">Hair Mask</div>
+        <div class="card-desc">The Tribe · Product animation</div>
+      </div>
+    </div>
+
+    <!-- EARPODS -->
+    <div class="work-card clickable earpods-card"
+      onclick="openLightbox('https://www.youtube.com/embed/yLF1UF1RcCE?autoplay=1&rel=0&modestbranding=1', 'Earpods — Apple')">
+
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <img class="card-img"
+        src="https://img.youtube.com/vi/yLF1UF1RcCE/maxresdefault.jpg"
+        alt="Apple Earpods">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-hover-overlay">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24">
+            <polygon points="5,3 19,12 5,21" />
+          </svg>
+        </div>
+        <div class="hover-title">// Play Video</div>
+      </div>
+
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;pointer-events:none;">
+        <div class="card-tag">Product Viz</div>
+        <div class="card-name">Earpods</div>
+        <div class="card-desc">Apple · Personal project</div>
+      </div>
+    </div>
+
     <!-- FACE SERUM -->
-    <div class="work-card large clickable"
+    <div class="work-card large clickable serum-card"
       onclick="openLightbox('https://www.youtube.com/embed/VmKSDgFXd9Y?autoplay=1&rel=0&modestbranding=1', 'Face Serum - Laneige')">
 
       <div class="corner tl"></div>
@@ -282,7 +278,6 @@
       <div class="corner bl"></div>
       <div class="corner br"></div>
 
-      <!-- YouTube Thumbnail -->
       <img class="card-img"
         src="https://img.youtube.com/vi/VmKSDgFXd9Y/maxresdefault.jpg"
         alt="Face Serum">
@@ -307,7 +302,6 @@
 
   </div>
 </section>
-
     <!-- ═══════════════════════════════════════
        SECTION 02 — SHORT CUTS
   ═══════════════════════════════════════ -->
