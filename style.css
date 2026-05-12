@@ -1158,11 +1158,13 @@ section {
   display: flex;
   gap: 2px;
   padding: 0 48px;
+  align-items: flex-start;
 }
 
 .short-card {
   flex: 1;
   min-width: 0;
+  align-self: flex-start;
   position: relative;
   overflow: hidden;
   cursor: none;
