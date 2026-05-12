@@ -1179,7 +1179,7 @@ section {
 }
 
 .short-card-inner {
-  aspect-ratio: 9 / 13.5;
+  height: 520px;
   position: relative;
   display: flex;
   flex-direction: column;
